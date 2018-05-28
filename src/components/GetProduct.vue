@@ -25,7 +25,7 @@
           <b-upload v-model="files">
             <a class="button is-primary">
               <b-icon icon="upload"></b-icon>
-              <span>Click to upload</span>
+              <span>เพิ่มรูปสินค้า</span>
             </a>
           </b-upload>
           <span class="file-name" v-if="files && files.length">
@@ -38,7 +38,8 @@
     <!-- -------------------------------------------------- -->
     <div class="columns is-centered">
       <div class="column is-4">
-        <a class="button is-success" @click="insertProduct(name, price, amount,files[0])">ยืนยัน</a>
+        <a class="button is-success is-outlined" @click="insertProduct(name, price, amount,files[0])">ยืนยัน</a>
+        <router-link to='/'><a class="button is-success is-outlined">กลับไปหน้าสินค้า</a></router-link>
       </div>
     </div>
     <div style="margin-bottom: 30px">

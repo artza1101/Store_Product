@@ -51,7 +51,7 @@ export default {
   display: flex;
   flex-direction: row;
   align-items: center;
-  border-bottom: 2px solid grey !important;
+  border-bottom: 1px solid grey !important;
 }
 .amount {
   display: flex;
@@ -60,7 +60,7 @@ export default {
 }
 .total {
   width: 100%;
-  font-weight: 600;
+  font-weight: 500;
   margin-right: 10px;
 }
 </style>
