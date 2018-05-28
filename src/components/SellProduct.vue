@@ -9,7 +9,6 @@
     </router-link>
     <div class="container">
     <img src = "/static/cat.jpg" width="300">
-
     <div class="columns is-centered is-multiline">
       <div class="column is-4" :key="key" v-for="(Product, key) in Products">
         <div class="card widthcard is-centered">
@@ -40,7 +39,7 @@
       </div>
     </div>
     <div class="bucket" @click="isComponentModalActive = true">
-      <img src="/static/bucket.png" width="35" alt="">
+      <img src="/static/baskets.png" width="50" alt="">
       <span v-if="bucketCount" class="count">{{bucketCount}}</span>
     </div>
     <b-modal :active.sync="isComponentModalActive" has-modal-card>
@@ -136,7 +135,7 @@ export default {
 }
 .bucket {
   position: fixed;
-  top: 20px;
+  top: 540px;
   right: 20px;
   border: 2px solid #fc7713;
   cursor: pointer;
