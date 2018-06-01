@@ -16,7 +16,7 @@
 
       <div class="column is-2">
         <b-field label="Amount" expanded>
-          <b-input type="number" v-model="amount"></b-input>
+          <b-input type="number" max="10" min="1" v-model="amount"></b-input>
         </b-field>
       </div>
 
